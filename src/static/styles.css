@@ -95,12 +95,38 @@ section h3 {
 }
 
 .participants-list li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   background-color: #e8eaf6;
   color: #1a237e;
   border: 1px solid #c5cae9;
   border-radius: 12px;
-  padding: 3px 10px;
+  padding: 3px 8px 3px 10px;
   font-size: 13px;
+}
+
+.remove-participant {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #7986cb;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.remove-participant:hover {
+  background-color: #c62828;
+  color: white;
 }
 
 .participants-list li.no-participants {
